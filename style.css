@@ -89,7 +89,7 @@ body {
 
 @media (max-width: 764px) {
     .image-container img {
-        content: url('./assets/764.png');
+        content: url('assets/764.png');
     }
     .logo {
         width: 235px;
@@ -122,7 +122,7 @@ body {
 
 @media (max-width: 428px) {
     .image-container img {
-        content: url('./assets/428.png');
+        content: url('assets/428.png');
     }
     .logo {
         width: 207px;
