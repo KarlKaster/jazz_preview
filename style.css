@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 1920px; /* Limit the width to 1920 pixels */
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Ensure the image fits within the container */
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 50px; /* Adjust the distance from the bottom as needed */
+    left: 67px; /* Adjust the distance from the left as needed */
+    background-color: rgba(
+        255,
+        255,
+        255,
+        0
+    ); /* Adjust the background color and opacity as needed */
+}
+
+.heading {
+    font-size: 60px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+}
+
+.sub-heading {
+    font-size: 35px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    margin-bottom: 12px;
+    width: 757px;
+}
+
+.link {
+    text-decoration: none;
+    color: #ff2e6b;
+    font-size: 35px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    padding: 0px;
+    margin: 0px;
+}
+.link:hover {
+    font-weight: bold;
+    color: #1cb788;
+}
+
+.logo {
+    width: 319px;
+    position: absolute;
+    top: 35px;
+    right: 43px;
+}
+
+.logo-subtext {
+    position: absolute;
+    top: 151px;
+    right: 74px;
+    color: #ff2e6b;
+    font-size: 31px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    width: 310px;
+    text-align: right;
+    line-height: 35px;
+}
+
+@media (max-width: 764px) {
+    .image-container img {
+        content: url('./assets/jazz_image_764px.svg');
+    }
+    .logo {
+        width: 235px;
+        top: 41px;
+        right: 11px;
+    }
+
+    .logo-subtext {
+        color: #ff2e6b;
+        font-size: 23px;
+        top: 104px;
+        right: 29px;
+        width: 217px;
+    }
+    .bottom-left {
+        bottom: 52px;
+        left: 32px;
+    }
+    .heading {
+        font-size: 46px;
+    }
+    .sub-heading {
+        font-size: 23px;
+        width: 541px;
+    }
+    .link {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 428px) {
+    .image-container img {
+        content: url('./assets/jazz_image_428px.svg');
+    }
+    .logo {
+        width: 207px;
+        top: 35px;
+        right: 12px;
+    }
+
+    .logo-subtext {
+        color: #ff2e6b;
+        font-size: 21px;
+        top: 95px;
+        right: 28px;
+        width: 217px;
+    }
+    .bottom-left {
+        bottom: 61px;
+        left: 23px;
+    }
+    .heading {
+        display: none;
+    }
+    .sub-heading {
+        font-size: 21px;
+        width: 361px;
+    }
+    .link {
+        font-size: 21px;
+    }
+}
