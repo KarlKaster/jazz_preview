@@ -152,3 +152,10 @@ body {
         font-size: 21px;
     }
 }
+
+@media (max-width: 400px) {
+    .bottom-left {
+        bottom: 20px;
+        left: 23px;
+    }
+}
